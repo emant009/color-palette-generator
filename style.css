@@ -8,5 +8,42 @@
 }
 
 body{
-  background-color:khaki;
+  background-color:rgb(219, 219, 219);
+}
+h1{
+  justify-content: center;
+  
+}
+.container{
+  background: gray;
+  border-radius: 20px;
+  border-width: 20px;
+  border-style: ;
+  place-items: center;
+  margin-top: 170px;
+  margin-bottom: 200px;
+  margin-left: 200px;
+  margin-right: 240px;
+  padding-top: 20px;
+  padding-bottom: 160px;
+  padding-left: none;
+  padding-right: 60px;
+}
+.generate-button{
+  padding-left: 4px;
+  padding-right: 17px;
+  margin-left: 20px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.color-box{
+  display: grid;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  width: 49;
+}
+.palette-container{
+  display: flex;
+  justify-items: center;
+  padding: 30px 2px;
 }
