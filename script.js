@@ -3,4 +3,7 @@ const paletteContainer = document.querySelector(".palette-container");
 
 generateButton.addEventListener("click", generatePalette);
 
-function()
+function generatePalette() {
+  const colors = []
+  
+}
