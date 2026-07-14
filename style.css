@@ -101,6 +101,6 @@ button i{
     grid-template-areas: "margin" "padding";
   }
   .palette-container{
-    display: none;
+    width: 50px;
   }
 }
