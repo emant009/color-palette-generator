@@ -1,23 +1,23 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "roboto";
 }
 
-body{
+body {
   background-color: rgb(237, 214, 240);
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 30px;
 }
-h1{
+h1 {
   justify-content: center;
   margin-bottom: 7px;
 }
-.container{
+.container {
   background-color: rgb(197, 197, 197);
   border: 1px;
   border-radius: 20px;
@@ -39,13 +39,13 @@ h1{
   padding-right: 10px;
   border-color: rgb(26, 65, 28);
 }
-.generate-button{
+.generate-button {
   background-color: rgb(112, 110, 112);
   color: rgb(253, 251, 251);
   padding-left: 9px;
   font-size: 15px;
   text-align: center;
-  font-weight:bold;
+  font-weight: bold;
   padding-right: 15px;
   padding-left: 15px;
   padding-top: 10px;
@@ -56,24 +56,24 @@ h1{
   border-radius: 50px;
   border-style: hidden;
 }
-.generate-button:hover{
+.generate-button:hover {
   cursor: pointer;
   transition: 0.8s;
   background-color: rgb(84, 82, 85);
 }
-button i{
+button i {
   font-size: medium;
 }
-.hex-value{
+.hex-value {
   padding-right: 12px;
   margin-right: 17px;
   cursor: pointer;
 }
-.hex-vaue i{
+.hex-vaue i {
   padding-left: 10px;
   margin-right: 20px;
 }
-.color-box{
+.color-box {
   display: grid;
   box-sizing: border-box;
   grid-template-rows: 110px;
@@ -82,25 +82,31 @@ button i{
   margin-bottom: 6px;
   border-radius: 10px;
   border-color: rgb(197, 197, 197);
-  border-style:double;
   box-shadow: 10px;
+  min-width: 0;
 }
-.color-info{
+.color-info {
   margin-top: 10px;
   margin-bottom: 0;
 }
-.palette-container{
+.palette-container {
   display: flex;
   justify-items: center;
   padding: 10px 2px;
 }
 
-@media screen and (max-width: 500px){
-  .container{
-    grid-template-columns: 1fr;
-    grid-template-areas: "margin" "padding";
+@media (max-width: 500px) {
+  .container {
+    width: 80px;
   }
-  .palette-container{
-    width: 50px;
+  .palette-container {
+    width: 20px;
+  }
+  .color-box {
+    width: 30px;
+  }
+  .color-info {
+    width: 30px;
+    height: 20px;
   }
 }

@@ -9,7 +9,7 @@ paletteContainer.addEventListener("click", function (e) {
 
     navigator.clipboard
       .writeText(hexValue)
-      .then(() => showCopySuccess())
+      .then(() => showCopySuccess(e.target))
       .catch((err) => console.log(err));
   } else if (e.target.classList.contains("color")) {
     const hexValue =
@@ -18,23 +18,23 @@ paletteContainer.addEventListener("click", function (e) {
       .writeText(hexValue)
       .then(() =>
         showCopySuccess(
-          e.target.nextElementSibling.querySeletor(".copy-button"),
+          e.target.nextElementSibling.querySelector("copy-button"),
         ),
       )
       .catch((err) => console.log(err));
   }
 });
 
-function showCopySuccess() {
-  copyButton.classList.remove("far", "fa-copy");
-  copyButton.classList.add("fas", "fa-check");
+function showCopySuccess(element) {
+  element.classList.remove("far", "fa-copy");
+  element.classList.add("fas", "fa-check");
 
-  copyButton.style.color = "#48bb78";
+  element.style.color = "#48bb78";
 
   setTimeout(() => {
-    copyButton.classList.remove("far", "fa-copy");
-    copyButton.classList.add("fas", "fa-check");
-    copyButton.style.color = "";
+    element.classList.remove("far", "fa-copy");
+    element.classList.add("fas", "fa-check");
+    element.style.color = "";
   }, 1500);
 }
 
@@ -71,4 +71,4 @@ function updatePaletteDisplay(colors) {
   });
 }
 
-// generatePalette();
+generatePalette();
